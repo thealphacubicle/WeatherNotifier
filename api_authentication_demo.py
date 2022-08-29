@@ -4,10 +4,10 @@ from twilio.rest import Client
 from twilio.http.http_client import TwilioHttpClient
 from dotenv import load_dotenv
 
-location_coordinates = Location.get_latitude_longitude(self=Location(address="9 Frying Pan Alley, London E1 7HS, United Kingdom",country = "United Kingdom"))
+location_coordinates = Location.get_latitude_longitude(self=Location(address="Longford TW6, UK",country = "United Kingdom"))
 MY_LAT = location_coordinates[0]
 MY_LONG = location_coordinates[1]
-load_dotenv("/Users/srihariraman/Desktop/Python Bootcamp/python-bootcamp/Project: Weather Notifier/env.env")
+load_dotenv("env.env")
 #proxy_client = TwilioHttpClient(proxy={'http': os.environ['http_proxy'], 'https': os.environ['https_proxy']})
 OPENWEATHER_APP_ID = os.getenv("OPENWEATHER_APP_ID")
 ACCT_SID = os.getenv("ACCT_SID")

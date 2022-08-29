@@ -4,7 +4,7 @@ import requests
 from dotenv import load_dotenv
 class Location:
     def __init__(self, address, **location):
-        load_dotenv("/Users/srihariraman/Desktop/Python Bootcamp/python-bootcamp/Project: Weather Notifier/env.env")
+        load_dotenv("env.env")
         self.address = address
         self.city = location.get("city")
     def get_latitude_longitude(self):
